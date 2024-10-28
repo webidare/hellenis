@@ -26,7 +26,7 @@ const faqItems = [
     answer: "We provide comprehensive customer support including 24/7 live chat, email support, and phone assistance during business hours. Our dedicated support team is trained to help you with any issues or questions you may have about using our platform."
   },
   {
-    question: "Is there a free trial available?",
+    question: "Is there a free trial available? blabla bala you can do it?",
     answer: "Yes, we offer a 14-day free trial that gives you full access to all features of our platform. This allows you to explore the system, test its capabilities, and see how it can benefit your business before making a commitment."
   }
 ];
