@@ -1,111 +1,90 @@
-"use client";
-
-import { useEffect, useState } from "react";
-import {
-  Carousel,
-  CarouselApi,
-  CarouselContent,
-  CarouselItem,
-} from "@/components/ui/carousel";
-import { User } from "lucide-react";
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import { Star } from "lucide-react"
+import { Card, CardContent } from "@/components/ui/card"
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 
 const testimonials = [
   {
-    title: "Game-changing platform",
-    content: "This platform has revolutionized how we manage our projects.",
-    name: "Emily Chen",
+    name: "Alex Johnson",
+    role: "Small Business Owner",
+    content: "This platform has revolutionized how I manage my business. The efficiency gains are remarkable!",
     avatar: "https://i.pravatar.cc/150?img=1",
-    initials: "EC"
+    rating: 5
   },
   {
-    title: "Exceptional support",
-    content: "The customer support team goes above and beyond.",
-    name: "Michael Rodriguez",
+    name: "Sarah Lee",
+    role: "Freelance Designer",
+    content: "The user interface is intuitive, and the customer support is top-notch. Highly recommended!",
     avatar: "https://i.pravatar.cc/150?img=2",
-    initials: "MR"
+    rating: 5
   },
   {
-    title: "Streamlined workflows",
-    content: "We've seen a dramatic improvement in our team's efficiency since adopting this tool.",
-    name: "Sarah Thompson",
+    name: "Michael Chen",
+    role: "Startup Founder",
+    content: "This tool has been a game-changer for our startup. It's helped us streamline operations significantly.",
     avatar: "https://i.pravatar.cc/150?img=3",
-    initials: "ST"
+    rating: 5
   },
   {
-    title: "Scalable solution",
-    content: "As our company grew, we needed a solution that could grow with us.",
-    name: "David Patel",
+    name: "Emily Rodriguez",
+    role: "E-commerce Manager",
+    content: "The integration capabilities are fantastic. It works seamlessly with our existing systems.",
     avatar: "https://i.pravatar.cc/150?img=4",
-    initials: "DP"
+    rating: 5
   },
   {
-    title: "Innovative features",
-    content: "The constant updates and new features keep us ahead of the curve.",
-    name: "Lisa Nakamura",
+    name: "David Patel",
+    role: "Marketing Consultant",
+    content: "I've tried many platforms, but this one stands out for its comprehensive features and ease of use.",
     avatar: "https://i.pravatar.cc/150?img=5",
-    initials: "LN"
+    rating: 5
   }
-];
+]
+
+const StarRating = ({ rating }: { rating: number }) => {
+  return (
+    <div className="flex">
+      {[...Array(5)].map((_, i) => (
+        <Star
+          key={i}
+          className={`w-5 h-5 ${
+            i < rating ? "text-yellow-400 fill-yellow-400" : "text-gray-300"
+          }`}
+        />
+      ))}
+    </div>
+  )
+}
 
 export const Testimonials = () => {
-  const [api, setApi] = useState<CarouselApi>();
-  const [current, setCurrent] = useState(0);
-
-  useEffect(() => {
-    if (!api) {
-      return;
-    }
-
-    setTimeout(() => {
-      if (api.selectedScrollSnap() + 1 === api.scrollSnapList().length) {
-        setCurrent(0);
-        api.scrollTo(0);
-      } else {
-        api.scrollNext();
-        setCurrent(current + 1);
-      }
-    }, 4000);
-  }, [api, current]);
-
   return (
-    <div className="w-full py-20 lg:py-40">
-      <div className="container mx-auto">
-        <div className="flex flex-col gap-10">
-          <h2 className="text-3xl md:text-5xl tracking-tighter lg:max-w-xl font-regular text-left">
-            Trusted by thousands of businesses worldwide
-          </h2>
-          <Carousel setApi={setApi} className="w-full">
-            <CarouselContent>
-              {testimonials.map((testimonial, index) => (
-                <CarouselItem className="lg:basis-1/2" key={index}>
-                  <div className="bg-muted rounded-md h-full lg:col-span-2 p-6 aspect-video flex justify-between flex-col">
-                    <User className="w-8 h-8 stroke-1" />
-                    <div className="flex flex-col gap-4">
-                      <div className="flex flex-col">
-                        <h3 className="text-xl tracking-tight">
-                          {testimonial.title}
-                        </h3>
-                        <p className="text-muted-foreground max-w-xs text-base">
-                          {testimonial.content}
-                        </p>
-                      </div>
-                      <p className="flex flex-row gap-2 text-sm items-center">
-                        <span className="text-muted-foreground">By</span>{" "}
-                        <Avatar className="h-6 w-6">
-                          <AvatarImage src={testimonial.avatar} alt={`Avatar of ${testimonial.name}`} />
-                          <AvatarFallback>{testimonial.initials}</AvatarFallback>
-                        </Avatar>
-                        <span>{testimonial.name}</span>
-                      </p>
-                    </div>
+    <section className="w-full py-12 md:py-24 lg:py-32 bg-gray-100 dark:bg-gray-800">
+      <div className="container px-4 md:px-6">
+        <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl text-center mb-12">
+          What Our Customers Say
+        </h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {testimonials.map((testimonial, index) => (
+            <Card key={index} className="bg-white dark:bg-gray-900">
+              <CardContent className="p-6">
+                <StarRating rating={testimonial.rating} />
+                <blockquote className="mt-4 text-lg text-gray-700 dark:text-gray-300">
+                  "{testimonial.content}"
+                </blockquote>
+                <div className="mt-4 flex items-center space-x-4">
+                  <Avatar>
+                    <AvatarImage src={testimonial.avatar} alt={`${testimonial.name}'s avatar`} />
+                    <AvatarFallback>{testimonial.name.split(' ').map(n => n[0]).join('')}</AvatarFallback>
+                  </Avatar>
+                  <div>
+                    <div className="font-semibold">{testimonial.name}</div>
+                    <div className="text-sm text-gray-500 dark:text-gray-400">{testimonial.role}</div>
                   </div>
-                </CarouselItem>
-              ))}
-            </CarouselContent>
-          </Carousel>
+                </div>
+              </CardContent>
+            </Card>
+          ))}
         </div>
       </div>
-    </div>
-  );
-};
+    </section>
+  )
+}
