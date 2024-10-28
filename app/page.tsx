@@ -11,6 +11,7 @@ import { CTAs } from "@/components/blocks/ctas";
 import { Blogs } from "@/components/blocks/blogs";
 import { FAQs } from "@/components/blocks/faqs";
 import Footer from "@/components/blocks/footer";
+import TestimonialSlider from "@/components/testimonials-slider";
 
 export default function Home() {
   return (
@@ -19,7 +20,7 @@ export default function Home() {
       <main>
         <Hero />
         <Cases />
-        <Testimonials />
+        <TestimonialSlider‎ />
         <Features />
         <Pricings />
         <Stats />
