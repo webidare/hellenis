@@ -1,5 +1,4 @@
 import TestimonialSlider from "@/components/testimonials-slider";
-import TestimonialSliderCard from "@/components/testimonials-slider-card";
 
 const testimonials = [
   {
@@ -59,10 +58,6 @@ export default function Home() {
       <div className="container">
         <h1>Autoplay plugin</h1>
         <TestimonialSlider testimonials={testimonials} />
-      </div>
-      <div className="container">
-        <h1>shadcn cards</h1>
-        <TestimonialSliderCard testimonials={testimonials} />
       </div>
     </main>
   );
