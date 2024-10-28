@@ -11,6 +11,7 @@ import { CTAs } from "@/components/blocks/ctas";
 import { Blogs } from "@/components/blocks/blogs";
 import { FAQs } from "@/components/blocks/faqs";
 import { Contacts } from "@/components/blocks/contacts";
+import { Footer } from "@/components/blocks/contacts";
 
 
 export default function Home() {
@@ -27,6 +28,7 @@ export default function Home() {
       <Blogs />
       <FAQs />
       <Contacts />
+      <Footer />
     </>
   );
 }
