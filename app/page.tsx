@@ -11,23 +11,24 @@ import { CTAs } from "@/components/blocks/ctas";
 import { Blogs } from "@/components/blocks/blogs";
 import { FAQs } from "@/components/blocks/faqs";
 import { Contacts } from "@/components/blocks/contacts";
-import { Footer } from "@/components/blocks/footer";
-
+import Footer from "@/components/blocks/footer";
 
 export default function Home() {
   return (
     <>
       <Header />
-      <Hero />
-      <Cases />
-      <Testimonials />
-      <Features />
-      <Pricings />
-      <Stats />
-      <CTAs />
-      <Blogs />
-      <FAQs />
-      <Contacts />
+      <main>
+        <Hero />
+        <Cases />
+        <Testimonials />
+        <Features />
+        <Pricings />
+        <Stats />
+        <CTAs />
+        <Blogs />
+        <FAQs />
+        <Contacts />
+      </main>
       <Footer />
     </>
   );
