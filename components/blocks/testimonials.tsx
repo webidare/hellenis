@@ -13,35 +13,35 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 const testimonials = [
   {
     title: "Game-changing platform",
-    content: "This platform has revolutionized how we manage our projects. It's intuitive, powerful, and has significantly boosted our productivity.",
+    content: "This platform has revolutionized how we manage our projects.",
     name: "Emily Chen",
     avatar: "https://i.pravatar.cc/150?img=1",
     initials: "EC"
   },
   {
     title: "Exceptional support",
-    content: "The customer support team goes above and beyond. They've been instrumental in helping us maximize the platform's potential.",
+    content: "The customer support team goes above and beyond.",
     name: "Michael Rodriguez",
     avatar: "https://i.pravatar.cc/150?img=2",
     initials: "MR"
   },
   {
     title: "Streamlined workflows",
-    content: "We've seen a dramatic improvement in our team's efficiency since adopting this tool. It's been a game-changer for our business.",
+    content: "We've seen a dramatic improvement in our team's efficiency since adopting this tool.",
     name: "Sarah Thompson",
     avatar: "https://i.pravatar.cc/150?img=3",
     initials: "ST"
   },
   {
     title: "Scalable solution",
-    content: "As our company grew, we needed a solution that could grow with us. This platform has exceeded our expectations in terms of scalability.",
+    content: "As our company grew, we needed a solution that could grow with us.",
     name: "David Patel",
     avatar: "https://i.pravatar.cc/150?img=4",
     initials: "DP"
   },
   {
     title: "Innovative features",
-    content: "The constant updates and new features keep us ahead of the curve. It's clear that innovation is at the core of this product.",
+    content: "The constant updates and new features keep us ahead of the curve.",
     name: "Lisa Nakamura",
     avatar: "https://i.pravatar.cc/150?img=5",
     initials: "LN"
