@@ -5,14 +5,6 @@ export default function Footer() {
   return (
     <footer className="bg-background py-16 px-4 sm:px-6 lg:px-8">
       <div className="max-w-4xl mx-auto text-center">
-        <p className="text-xl text-muted-foreground mb-8">
-          Hellenis is open source and powered by open source software.
-          The code is available on{' '}
-          <Link href="https://github.com/yourusername/hellenis" className="underline hover:text-primary">
-            GitHub
-          </Link>
-          .
-        </p>
         <Command className="w-12 h-12 mx-auto mb-8 text-foreground" />
         <p className="text-sm text-muted-foreground">
           Built by{' '}
