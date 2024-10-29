@@ -62,7 +62,7 @@ export const Hero = () => {
             </h1>
 
             <p className="text-lg md:text-xl leading-relaxed tracking-tight text-muted-foreground max-w-2xl text-center">
-              Hellenis hadir di Yogyakarta sebagai solusi terpercaya untuk semua kebutuhan sedot WC Anda. Kami menawarkan layanan profesional dengan harga terjangkau, didukung oleh tim berpengalaman dan armada truk modern.
+              Hellenis hadir di Yogyakarta sebagai solusi terpercaya untuk semua kebutuhan sedot WC Anda. Bersih, cepat, dan profesional.
             </p>
           </div>
           <div className="flex flex-row gap-3">
