@@ -8,7 +8,7 @@ import { ModeToggle } from "@/components/ui/mode-toggle";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Hellenis",
+  title: "Hellenis - Sedot WC Yogyakarta",
   description: "Hellenis, solusi sedot WC terpercaya di Yogyakarta! Profesional, harga terjangkau, tim berpengalaman & truk modern.",
   keywords:
     "sedot WC, sedot WC Yogyakarta, Hellenis,  Yogyakarta, layanan sedot WC,  septic tank, WC mampet, saluran mampet,  pelancaran saluran, pembuatan septic tank,  profesional,  terjangkau, berpengalaman, truk modern",
@@ -25,11 +25,11 @@ export default function RootLayout({
       <head>
         <meta
           property="og:title"
-          content="TWBlocks - Free SaaS website blocks"
+          content="Hellenis - Sedot WC Yogyakarta"
         />
         <meta
           property="og:description"
-          content="Free SaaS website blocks based on React with shadcn & Tailwind"
+          content="Hellenis, solusi sedot WC terpercaya di Yogyakarta! Profesional, harga terjangkau, tim berpengalaman & truk modern."
         />
         <meta
           property="og:image"
