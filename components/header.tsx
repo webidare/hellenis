@@ -29,7 +29,7 @@ export const Header = () => {
           ))}
         </div>
         <div className="flex lg:justify-center">
-          <p className="font-semibold">Hellenis - Sedot WC Yogyakarta</p>
+          <p className="font-semibold">Hellenis</p>
         </div>
         <div className="flex justify-end w-full gap-4">
           
