@@ -8,11 +8,11 @@ import { ModeToggle } from "@/components/ui/mode-toggle";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "TWBlocks",
-  description: "Free SaaS website blocks based on React with shadcn & Tailwind",
+  title: "Hellenis",
+  description: "Hellenis, solusi sedot WC terpercaya di Yogyakarta! Profesional, harga terjangkau, tim berpengalaman & truk modern.",
   keywords:
-    "tailwindcss, react, shadcn, design, webdesign, website, saas templates, saas website templates",
-  authors: [{ name: "Tommy Jepsen", url: "https://tommyjepsen.com" }],
+    "sedot WC, sedot WC Yogyakarta, Hellenis,  Yogyakarta, layanan sedot WC,  septic tank, WC mampet, saluran mampet,  pelancaran saluran, pembuatan septic tank,  profesional,  terjangkau, berpengalaman, truk modern",
+  authors: [{ name: "Hellenis", url: "https://hellenis.au" }],
 };
 
 export default function RootLayout({
