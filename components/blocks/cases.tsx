@@ -68,7 +68,6 @@ export default function Cases() {
                         height={100}
                         className="w-16 h-16 object-contain mb-2"
                       />
-                      <span className="text-sm text-center">{company.name}</span>
                     </div>
                   </CarouselItem>
                 ))}
