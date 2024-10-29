@@ -29,18 +29,11 @@ export const Header = () => {
           ))}
         </div>
         <div className="flex lg:justify-center">
-          <p className="font-semibold">TWBlocks.com</p>
+          <p className="font-semibold">Hellenis - Sedot WC Yogyakarta</p>
         </div>
         <div className="flex justify-end w-full gap-4">
-          <Button
-            className="gap-2 hidden md:flex"
-            variant="outline"
-            onClick={() => {
-              window.open("https://ui.shadcn.com/themes", "_blank");
-            }}
-          >
-            shadcn Themes <PaintBucket className="w-4 h-4" />
-          </Button>
+          
+      
           <Button
             className="gap-2"
             onClick={() => {
