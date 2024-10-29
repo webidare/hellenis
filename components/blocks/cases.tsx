@@ -10,16 +10,16 @@ import {
 } from "@/components/ui/carousel";
 
 const companies = [
-  { name: "Walmart", logo: "/public/walmart.svg" },
-  { name: "Verizon", logo: "/public/verizon.svg" },
-  { name: "McDonald's", logo: "/public/mcdonalds.svg" }, 
-  { name: "Samsung", logo: "/public/samsung.svg" },
-  { name: "Cocacola", logo: "/public/cocacola.svg" },
-  { name: "Meta", logo: "/public/facebook.svg" }, // Facebook is now Meta
-  { name: "Amazon", logo: "/public/amazon.svg" },
-  { name: "Microsoft", logo: "/public/microsoft.svg" },
-  { name: "Alphabet", logo: "/public/google.svg" }, // Google is under Alphabet
-  { name: "Apple", logo: "/public/apple.svg" },
+  { name: "Walmart", logo: "/walmart.svg" },
+  { name: "Verizon", logo: "/verizon.svg" },
+  { name: "McDonald's", logo: "/mcdonalds.svg" }, 
+  { name: "Samsung", logo: "/samsung.svg" },
+  { name: "Cocacola", logo: "/cocacola.svg" },
+  { name: "Meta", logo: "/facebook.svg" }, // Facebook is now Meta
+  { name: "Amazon", logo: "/amazon.svg" },
+  { name: "Microsoft", logo: "/microsoft.svg" },
+  { name: "Alphabet", logo: "/google.svg" }, // Google is under Alphabet
+  { name: "Apple", logo: "/apple.svg" },
 ];
 
 export default function Cases() {
